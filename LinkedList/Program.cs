@@ -9,6 +9,7 @@ namespace LinkedList
 
             //Welcome Message
             Console.WriteLine("=-=-=-=-=-Welcome To The Linked List Program-=-=-=-=-=");
+            Console.WriteLine("-----------------------------------------------");
 
             //Calling Class LinkedList
             LinkedList linkedList = new LinkedList();
@@ -16,8 +17,11 @@ namespace LinkedList
             linkedList.Add(30);
             linkedList.Add(70);
 
-            //Searching an Element
+            //Searching an Element            
             linkedList.SearchElement(30);
+
+            //Adding Data After 30
+            linkedList.InsertAtParticularPosition(3, 40);
 
             /* //Display Data Before Delete Last element 
              Console.WriteLine("-----------------------------------------------");
@@ -26,11 +30,13 @@ namespace LinkedList
              linkedList.Display();
              //Delete Last Element
              linkedList.PopLastElement();
-             //Display Data After Delete Last element 
-             Console.WriteLine("-----------------------------------------------");
-             Console.WriteLine("Display Data After Delete Last element ::");
-             Console.WriteLine("-----------------------------------------------");
             */
+
+            //Display Data After Add
+            Console.WriteLine("-----------------------------------------------");
+            Console.WriteLine("Display After Adding element ::");
+            Console.WriteLine("-----------------------------------------------");
+
             Console.WriteLine("Data In Linked List");
             linkedList.Display();
 
