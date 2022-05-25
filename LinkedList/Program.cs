@@ -13,26 +13,26 @@ namespace LinkedList
             //Calling Class LinkedList
             LinkedList linkedList = new LinkedList();
             linkedList.Add(56);
+            linkedList.Add(30);
             linkedList.Add(70);
 
-            //Display Data Before Adding into  Linked List
+            //Display Data Before Delete Last element 
             Console.WriteLine("-----------------------------------------------");
-            Console.WriteLine("Display Data Before Adding into  Linked List ::");
+            Console.WriteLine("Display Data Before Delete Last element ::");
             Console.WriteLine("-----------------------------------------------");
             linkedList.Display();
 
-            //Adding Data Between 2 Data
-            linkedList.InsertAtParticularPosition(2, 30);
+            //Delete Last Element
+            linkedList.PopLastElement();
 
-            //Display Data After Adding into  Linked List
+            //Display Data After Delete Last element 
             Console.WriteLine("-----------------------------------------------");
-            Console.WriteLine("Display Data Before Adding into  Linked List ::");
+            Console.WriteLine("Display Data After Delete Last element ::");
             Console.WriteLine("-----------------------------------------------");
 
             linkedList.Display();
 
             Console.ReadLine();
-
 
         }
     }
