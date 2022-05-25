@@ -80,6 +80,24 @@ namespace LinkedList
             return head;
         }
 
+        //Search an Element
+        public bool SearchElement(int value)
+        {
+            int index = 0;
+            Node temp = head;
+            while (temp != null)
+            {
+                index++;
+                if (temp.data.Equals(value))
+                {
+                    Console.WriteLine(value + " is Found At Index = " + index);
+                    return true;
+                }
+                temp = temp.next;
+            }
+            return false;
+        }
+
         //Display LinkedList Data through Method
         internal void Display()
         {

@@ -16,20 +16,22 @@ namespace LinkedList
             linkedList.Add(30);
             linkedList.Add(70);
 
-            //Display Data Before Delete Last element 
-            Console.WriteLine("-----------------------------------------------");
-            Console.WriteLine("Display Data Before Delete Last element ::");
-            Console.WriteLine("-----------------------------------------------");
-            linkedList.Display();
+            //Searching an Element
+            linkedList.SearchElement(30);
 
-            //Delete Last Element
-            linkedList.PopLastElement();
-
-            //Display Data After Delete Last element 
-            Console.WriteLine("-----------------------------------------------");
-            Console.WriteLine("Display Data After Delete Last element ::");
-            Console.WriteLine("-----------------------------------------------");
-
+            /* //Display Data Before Delete Last element 
+             Console.WriteLine("-----------------------------------------------");
+             Console.WriteLine("Display Data Before Delete Last element ::");
+             Console.WriteLine("-----------------------------------------------");
+             linkedList.Display();
+             //Delete Last Element
+             linkedList.PopLastElement();
+             //Display Data After Delete Last element 
+             Console.WriteLine("-----------------------------------------------");
+             Console.WriteLine("Display Data After Delete Last element ::");
+             Console.WriteLine("-----------------------------------------------");
+            */
+            Console.WriteLine("Data In Linked List");
             linkedList.Display();
 
             Console.ReadLine();
